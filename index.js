@@ -12,6 +12,15 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  // use the .map method on the tutorials to return a new array
+  tutorials.map(sentence => sentence.charAt(0).toUpperCase() + sentence.slice(1))
   return tutorials
 }
+
+
+//students.map(student => student + " the wizard")
+//const activatedRobots = robots.map( robot => {
+  //return Object.assign({}, robot, {
+  //   modes: robot.modes * 2,
+  //   isActivated: true,
+  // });
+// });
